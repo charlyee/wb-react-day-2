@@ -10,7 +10,7 @@ const myPersonFunction = ( input: string ): string => {
 
 function App() {
   return (
-    <div className="App"> { //this is just a comment }
+    <div className="App">{/*This is a JSX comment*/}
       <header className="App-header">
         <Heading />
         <img src={logo} className="App-logo" alt="logo" />
