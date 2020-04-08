@@ -1,7 +1,12 @@
 import React from 'react';
 import { Heading } from './components/Heading';
+import Person from './components/Person';
 import logo from './logo.svg';
 import './App.css';
+
+const myPersonFunction = ( input: string ): string => {
+  return 'Our person is important' + input;
+}
 
 function App() {
   return (
@@ -20,6 +25,7 @@ function App() {
         >
           Learn React
         </a>
+        <Person name="Billy-Joe Bob" callbackMethod={myPersonFunction} />
       </header>
     </div>
   );
